@@ -1,0 +1,160 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+body {
+  background-color: rgb(175, 175, 175);
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+}
+
+.product {
+  background: url("../img/bg.png") no-repeat center / 100% 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.product__img {
+}
+
+.product__img img {
+  width: 300px;
+}
+
+.product__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  width: 350px;
+}
+
+.product__about-title {
+  font-family: "Grandstander", cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+}
+
+.product__title-info {
+  font-family: "Grandstander", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.product__title-price {
+  font-family: "Grandstander", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product__title-btn {
+  font-family: "Grandstander", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 1em 3em;
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(43, 129, 84) inset;
+  transition: 0.2s;
+}
+
+.product__title-btn:hover {
+  background: rgb(53, 167, 110);
+}
+
+.product__title-btn:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
